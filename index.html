@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Shopping Cart</h2>
+  <div class="cart">
+    <!-- Items begin -->
+    <ul id="cart-items">
+      <!-- Item 1 -->
+      <li data-price="10" data-quantity="3">
+        <img src="./bag.jpg">
+        <div>
+          <span class="title">Item name:</span>
+          <span class="item-name">Bag</span>
+          <br>
+          <span class="title">Price:</span>
+          <span class="item-price">$10</span>
+          <br>
+          <span class="title">Item quantity:</span>
+          <button class="adjust-quantity" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity">3</span>
+          <button class="adjust-quantity" onclick="increaseQuantity(this)">+</button>
+          <br>
+          <button class="delete-item" onclick="deleteItem(this)">Delete</button>
+          <br>
+          <button class="like-item" onclick="likeItem(this)">❤</button>
+        </div>
+      </li>
+      <!-- End item 1 -->
+      <br>
+      <!-- Item 2 -->
+      <li data-price="15" data-quantity="3">
+        <img src="./pants.jpg">
+        <div class="divv">
+          <span class="title">Item name:</span>
+          <span class="item-name">Pants</span>
+          <br>
+          <span class="title">Price:</span>
+          <span class="item-price">$15</span>
+          <br>
+          <span class="title">Item quantity:</span>
+          <button class="adjust-quantity" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity">3</span>
+          <button class="adjust-quantity" onclick="increaseQuantity(this)">+</button>
+          <br>
+          <button class="delete-item" onclick="deleteItem(this)">Delete</button>
+          <br>
+          <button class="like-item" onclick="likeItem(this)">❤</button>
+        </div>
+      </li>
+      <!-- End item 2 -->
+      <br>
+      <!-- Item 3 -->
+      <li data-price="20" data-quantity="3">
+        <img src="./dress.jpg">
+        <div>
+          <span class="title">Item name:</span>
+          <span class="item-name">Dress</span>
+          <br>
+          <span class="title">Price:</span>
+          <span class="item-price">$20</span>
+          <br>
+          <span class="title">Item quantity:</span>
+          <button class="adjust-quantity" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity">3</span>
+          <button class="adjust-quantity" onclick="increaseQuantity(this)">+</button>
+          <br>
+          <button class="delete-item" onclick="deleteItem(this)">Delete</button>
+          <br>
+          <button class="like-item" onclick="likeItem(this)">❤</button>
+        </div>
+      </li>
+      <!-- End item 3 -->
+    </ul>
+    <!-- Items end -->
+    <br>
+    <br>
+    <p>Total Price: $<span id="total-price"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
